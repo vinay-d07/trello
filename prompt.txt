@@ -1,0 +1,26 @@
+Since the mode/style interviews has shifted from the standard DSA round
+to an extra comprehensive round where you are given a codebase and asked to find 
+and fix the bungs , improve the performance while keeping the code clean
+
+what I want you to do is 
+1. Collect all the info about this round like what type of questions are asked
+which tech stack is used 
+
+2. generate a 30d plan for me to prepare for this round
+
+3. the plan should include tasks on 
+    a. adding a new feature
+    b. improving the performance
+    c. fixing the bugs 
+    d. scalability issues
+    e. code style and best practices
+
+consider that Im pretty comfortable with React Nextjs express nodejs, prisma with mongo/pg 
+I will be doing all the coding in this folder 
+generate the plan in such way that I can able to follow it easily
+and also generate the codebase when I ask you to generate it for the task
+
+keep a standard codebase where I will be contributing 
+the codebase will cover most of the features of any production grade app be 
+realtime , caching , scalability, best practices , security etc 
+

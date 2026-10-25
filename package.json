@@ -1,0 +1,39 @@
+{
+  "name": "taskflow",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Production-style Next.js + Express monorepo used for codebase-interview practice",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "engines": {
+    "node": ">=20.11"
+  },
+  "scripts": {
+    "dev": "concurrently -k -n api,worker,web -c blue,magenta,green \"npm run dev -w @taskflow/api\" \"npm run dev:worker -w @taskflow/api\" \"npm run dev -w @taskflow/web\"",
+    "build": "npm run build -w @taskflow/api && npm run build -w @taskflow/web",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "infra:up": "docker compose up -d",
+    "infra:down": "docker compose down",
+    "db:migrate": "npm run db:migrate -w @taskflow/api",
+    "db:seed": "npm run db:seed -w @taskflow/api",
+    "db:studio": "npm run db:studio -w @taskflow/api",
+    "check": "npm run lint && npm run typecheck && npm run test"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.31.0",
+    "concurrently": "^9.2.0",
+    "eslint": "^9.31.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "globals": "^16.3.0",
+    "prettier": "^3.6.2",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.38.0"
+  }
+}
