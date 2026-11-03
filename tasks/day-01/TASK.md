@@ -21,13 +21,13 @@ Before you start: read Guide.md Part 1 and Part 2 once.
 
 **Acceptance criteria**
 
-- [ ] Docker Desktop is running and `docker compose ps` shows `postgres` and `redis` as healthy.
-- [ ] A git baseline exists: one commit called `baseline` on `main`, and `git status` is clean.
-- [ ] The DB is migrated and seeded.
-- [ ] `npm run dev` shows three processes (`api`, `worker`, `web`) without errors.
-- [ ] `http://localhost:4000/health/ready` returns `200` with both checks `true`.
-- [ ] `npm run check` (lint + typecheck + tests) is green.
-- [ ] You wrote down every setup problem you hit and how you fixed it. Interviewers like hearing
+- [x] Docker Desktop is running and `docker compose ps` shows `postgres` and `redis` as healthy.
+- [x] A git baseline exists: one commit called `baseline` on `main`, and `git status` is clean.
+- [x] The DB is migrated and seeded.
+- [x] `npm run dev` shows three processes (`api`, `worker`, `web`) without errors.
+- [x] `http://localhost:4000/health/ready` returns `200` with both checks `true`.
+- [x] `npm run check` (lint + typecheck + tests) is green.
+- [x] You wrote down every setup problem you hit and how you fixed it. Interviewers like hearing
       "here's what broke during setup and why".
 
 ---
@@ -38,11 +38,11 @@ Before you start: read Guide.md Part 1 and Part 2 once.
 
 **Acceptance criteria**
 
-- [ ] Alice is logged in in one browser and Bob in another (or an incognito window).
-- [ ] Both have the **Launch v1** project open.
-- [ ] Bob changes a task's status. Alice's board moves the card **without a refresh**.
-- [ ] Bob comments on a task. Alice's bell 🔔 shows a red unread count **without a refresh**.
-- [ ] Stop **only the worker** and repeat the comment. Write down what changes, then restart it
+- [x] Alice is logged in in one browser and Bob in another (or an incognito window).
+- [x] Both have the **Launch v1** project open.
+- [x] Bob changes a task's status. Alice's board moves the card **without a refresh**.
+- [x] Bob comments on a task. Alice's bell 🔔 shows a red unread count **without a refresh**.
+- [x] Stop **only the worker** and repeat the comment. Write down what changes, then restart it
       and write down what happens next.
 
 ---

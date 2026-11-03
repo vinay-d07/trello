@@ -1,4 +1,4 @@
-# Day 01: Solution
+`# Day 01: Solution
 
 > Read this only after your timer ended. Compare it with your journal: what did you miss, and why?
 > Line numbers are from the baseline commit. If they drift later, search for the function name.
@@ -300,3 +300,4 @@ Naming these in an interview shows you can tell deliberate design from accident.
 - "Your board shows only the newest 100 tasks (`project-board.tsx:14`). What happens at 5,000?"
 - "If we ran the worker on 3 machines, could a notification be delivered twice? Why?"
 - "Why does the access cookie live 7 days when the JWT inside it lives 15 minutes?"
+`
